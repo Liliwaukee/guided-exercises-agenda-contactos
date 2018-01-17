@@ -1,27 +1,16 @@
 
   //Traer elementos del HTML
   
+  function loadPage() {
+
+  }
   
-  var loadPage = function () {
-    
-  };
+  function validateContact() {
+    //En esta funcion tenemos que validar que el usuario ingrese datos y no valores vacios
 
-  var paintContactsInHTML = function(contact) {
-   
-    /* Crear elementos con DOM html al publicar contacto */
-     
-    
-    //Asignando atributos y/o eventos
-    
-
-    /* Asignando valores a los elementos*/
-    
-
-    //Agregamos lo que creamos con el DOM a un elemento existente del HTML
-    
-  };
-
-  var addContact = function (e) {
+  }
+  
+  function addContact(e) {
     e.preventDefault();
     //Las siguientes lineas toman el valor que el usuario agrega en los inputs y los guardan en variables
     
@@ -35,27 +24,30 @@
     
     /* Limpiando valores de formulario*/
     
-  };
+  }
 
+  function paintContactsInHTML(contact) {
+    /* Crear elementos con DOM html al publicar contacto */
+     
+    
+    //Asignando atributos y/o eventos
+    
+
+    /* Asignando valores a los elementos*/
+    
+
+    //Agregamos lo que creamos con el DOM a un elemento existente del HTML
+    
+  }
   
-
-
-  var validateContact = function () {
-    //En esta funcion tenemos que validar que el usuario ingrese datos y no valores vacios
-  };
-
-
-  var filterContacts = function() {
+  function filterContacts() {
     //Esta funcion debe de filtrar la data segun el valor que el usuario ingrese en el input de busqueda
-  };
 
+  }
 
-  var removeContact = function () {
+  function removeContact() {
     //esta funcion como primer alcance debe de poer borrar la tarjeta que se crea desde el DOM
     //como segundo alcance borrar el elemento de la data
-  };
-
-
-
+  }
 
   $(document).ready(loadPage);
