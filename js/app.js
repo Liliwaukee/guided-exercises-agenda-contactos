@@ -1,13 +1,27 @@
 
   //Traer elementos del HTML
+  var $nameInput = $("#number-input");
+  var $phoneInput = $("#phone-input");
   
   function loadPage() {
+    $(".modal").modal();
+
+    $nameInput.keyup(validateContact);
+    $phoneInput.keyup(validateContact);
+
+   
 
   }
   
   function validateContact() {
+    
     //En esta funcion tenemos que validar que el usuario ingrese datos y no valores vacios
-
+   var $containerAddContact = $("#add-contact");
+   if ($(this).val().trim().length > 0){
+    $containerAddContact.removeAttr("disabled");
+   }else {
+    $containerAddContact.attr("disabled", true);
+   }
   }
   
   function addContact(e) {
@@ -51,3 +65,5 @@
   }
 
   $(document).ready(loadPage);
+
+  
